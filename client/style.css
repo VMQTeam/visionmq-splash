@@ -1,0 +1,135 @@
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+  background-color: rgba(251, 251, 251, 0.248);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+hr {
+  border: none;
+  border-top: 1px #ff8f45 solid;
+  height: 1px;
+  margin-bottom: 1px;
+}
+h1 {
+  font-weight: 200;
+}
+h1:hover {
+  color: #ea5e01;
+}
+h2 {
+  font-weight: 200;
+}
+h2:hover {
+  color: #ea5e01;
+}
+h3 {
+  font-weight: 200;
+}
+h3:hover {
+  color:#ff8f45;
+}
+#header {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1vm;
+  height: 18vh;
+}
+#header2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 1px solid #ea5e01; */
+  margin-right: 2vw;
+}
+
+#header-button {
+  justify-self: flex-end;
+  font-size: 16px;
+  height: 33px;
+  width: 58px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 3px;
+  padding: 1.5%;
+  background-color: rgb(255, 102, 0);
+  margin: 2vw;
+}
+
+#header-button:hover {
+  background-color: #ff8f45;
+}
+#header-button:active {
+  background-color: #ea5e01;
+}
+
+#logo {
+  display: flex;
+  width: auto;
+  max-width: 100%;
+  max-height: 130px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+#footer {
+  position:absolute;
+  padding: 0;
+  bottom: 0;
+  height: 2vw;
+  width: 100%;
+  font-size: 1vw;
+  padding: .5vw;
+  color: #ea5e01;
+}
+#res {
+  right: 1vw;
+}
+
+#home {
+  /* border: 1px solid #ea5e01; */
+  padding-top: 3vw;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 78vh;
+}
+#home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+#team {
+  padding-top: 3vw;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 78vh;
+}
+
+#team-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#demo {
+  padding-top: 3vw;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 78vh;
+}
+
+#demo-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
