@@ -2,6 +2,7 @@
   /* box-sizing: border-box; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   background-color: rgba(251, 251, 251, 0.248);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -10,6 +11,10 @@ hr {
   border-top: 1px #ff6600 solid;
   height: 1px;
   margin-bottom: 1px;
+  width: 100%;
+}
+p {
+  background: transparent;
 }
 h1 {
   font-weight: 200;
@@ -31,6 +36,7 @@ h3:hover {
 }
 #header {
   position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,52 +76,74 @@ h3:hover {
   width: auto;
   max-width: 100%;
   max-height: 130px;
+  min-width: 100px;
   height: auto;
   margin: 0 auto;
   display: block;
 }
-
+#main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  align-content: space-between;
+}
 #footer {
-  padding: fixed;
+  margin-top: auto;
   bottom: 0;
-  height: 2vh;
   width: 100%;
-  font-size: 1vw;
+  font-size: 1.5vh;
   padding: .5vw;
-  color: #ea5e01;
+  color: #FCFCFC;
+  background-color: #ea5e01;
+  height: 4vh;
 }
-#res {
+/* #res {
   right: 1vw;
-}
+} */
 
 #home {
-  /* border: 1px solid #ea5e01; */
   padding-top: 3vw;
+  padding-bottom: 5vw;
   display: flex;
   justify-content: center;
   width: 100%;
   height: 78vh;
 }
-#home-content {
+#content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: stretch;
   text-align: center;
+  width: 100%;
 }
-#home-content-rows {
+#content-rows {
   display: flex;
-  flex-direction: row;
-
+  flex-direction:row;
+  justify-content: flex-start;
+  /* border: 1px solid black; */
+  height: 100%;
+  width: 100%;
+  /* margin-bottom: 5vw; */
+  margin-left: 10%;
 }
+#space {
+  width: 20vw;
+  height: 10vh;
+}
+
 #home-content-image {
   display: flex;
   width: auto;
   left: 0;
-  max-width: 50%;
+  max-width: auto;
+  height: 400px;
+  /* border: 1px solid black; */
   max-height: 800px;
-  height: auto;
-  margin: 1vw;
+  margin-top: 3vw;
   display: block; 
+  border-color: 1px #ff6600;
+  
 }
 
 #team {
@@ -126,13 +154,6 @@ h3:hover {
   height: 78vh;
 }
 
-#team-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
 #demo {
   padding-top: 3vw;
   display: flex;
@@ -141,9 +162,3 @@ h3:hover {
   height: 78vh;
 }
 
-#demo-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}

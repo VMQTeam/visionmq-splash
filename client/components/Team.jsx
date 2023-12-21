@@ -4,7 +4,7 @@ const Team = () => {
 
   return (
     <div id='team'>
-      <div id='team-content'>
+      <div id='content'>
       <h2>Team</h2>
       </div>
     </div>

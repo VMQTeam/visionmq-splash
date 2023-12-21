@@ -4,7 +4,8 @@ import Header from './Header.jsx';
 import Home from './Home.jsx';
 import Team from './Team.jsx';
 import Demo from './Demo.jsx';
-import Footer from './Footer.jsx'
+import Footer from './Footer.jsx';
+
 
 
 
