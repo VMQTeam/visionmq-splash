@@ -19,7 +19,7 @@ const MainContainer = () => {
         <Route path='/team' element={<Team/>} />
         <Route path='/demo' element={<Demo/>} />
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 };
